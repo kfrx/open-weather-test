@@ -102,7 +102,7 @@ describe('Weather', () => {
 
     expect(weatherItems).toHaveLength(expectedData.list.length);
 
-    weatherItems.forEach((item: WeatherItem, index: number) => {
+    weatherItems.forEach((item, index) => {
       expect(item).toHaveTextContent(expectedData.list[index].name);
       expect(item).toHaveTextContent(
         expectedData.list[index].weather[0].description
